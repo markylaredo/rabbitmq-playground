@@ -1,0 +1,40 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3.13
+    container_name: rabbitmq
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+      RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS: "-rabbitmq_stream advertised_host localhost"
+      RABBITMQ_MANAGEMENT_ENABLED: "true" 
+    restart: unless-stopped
+    command: >
+      sh -c "rabbitmq-plugins enable rabbitmq_management &&
+             rabbitmq-server"
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "status"]
+      interval: 20s
+      retries: 10
+      start_period: 60s 
+      timeout: 10s
+
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8080"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

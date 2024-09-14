@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppRabbitMqDemo", "src\ConsoleAppRabbitMqDemo\ConsoleAppRabbitMqDemo.csproj", "{BDC507D1-C63B-48D0-8883-52FC0C317C2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationRabbitMqDemo", "src\WebApplicationRabbitMqDemo\WebApplicationRabbitMqDemo.csproj", "{1C4EEF16-AF7A-42E8-B0EA-BC447F346E1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDC507D1-C63B-48D0-8883-52FC0C317C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC507D1-C63B-48D0-8883-52FC0C317C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC507D1-C63B-48D0-8883-52FC0C317C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC507D1-C63B-48D0-8883-52FC0C317C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C4EEF16-AF7A-42E8-B0EA-BC447F346E1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C4EEF16-AF7A-42E8-B0EA-BC447F346E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C4EEF16-AF7A-42E8-B0EA-BC447F346E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C4EEF16-AF7A-42E8-B0EA-BC447F346E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
