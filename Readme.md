@@ -57,8 +57,7 @@ The project includes a `wait-for-rabbitmq.sh` script to ensure RabbitMQ is avail
    ```bash
    dotnet run
    ```
-
-   This application will start and enter a message to send event logs to RabbitMQ.
+   Browse the web application at [http://localhost:5000/index.html](http://localhost:5000/index.html). This page provides a simple interface to interact with the application.
 
 ### Contributing
 
