@@ -2,5 +2,5 @@
 /src/ConsoleAppRabbitMqDemo/obj/
 /src/WebApplicationRabbitMqDemo/bin/
 /src/WebApplicationRabbitMqDemo/obj/
-
+/.idea/
 /packages/
